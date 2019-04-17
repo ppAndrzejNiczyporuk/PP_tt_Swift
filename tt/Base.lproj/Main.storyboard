@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,13 +13,47 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="tt" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="testp0" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8j3-90-yHd">
+                                <rect key="frame" x="78" y="36" width="63" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nhG-W2-gxa">
+                                <rect key="frame" x="127" y="74" width="138" height="30"/>
+                                <state key="normal" title="Check Parcel Status">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="actrionCheck:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eof-4x-7mZ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Parcel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TOK-vk-Umr">
+                                <rect key="frame" x="20" y="39" width="66" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <constraints>
+                            <constraint firstItem="8j3-90-yHd" firstAttribute="leading" secondItem="uqi-ta-uO7" secondAttribute="leading" constant="78" id="3wc-L9-w7d"/>
+                            <constraint firstItem="nhG-W2-gxa" firstAttribute="leading" secondItem="uqi-ta-uO7" secondAttribute="leading" constant="127" id="4BK-Xh-I8y"/>
+                            <constraint firstItem="TOK-vk-Umr" firstAttribute="leading" secondItem="uqi-ta-uO7" secondAttribute="leading" constant="20" id="5Ay-Sa-pWu"/>
+                            <constraint firstItem="nhG-W2-gxa" firstAttribute="top" secondItem="8j3-90-yHd" secondAttribute="bottom" constant="8" symbolic="YES" id="Ooj-cB-yKI"/>
+                            <constraint firstItem="uqi-ta-uO7" firstAttribute="trailing" secondItem="TOK-vk-Umr" secondAttribute="trailing" constant="289" id="dHv-Zc-T0j"/>
+                            <constraint firstItem="8j3-90-yHd" firstAttribute="top" secondItem="uqi-ta-uO7" secondAttribute="top" constant="16" id="ecW-H5-EY8"/>
+                            <constraint firstItem="TOK-vk-Umr" firstAttribute="baseline" secondItem="8j3-90-yHd" secondAttribute="baseline" id="xZF-ss-xAV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="uqi-ta-uO7"/>
                     </view>
+                    <connections>
+                        <outlet property="txtParcel" destination="8j3-90-yHd" id="qx8-GG-hnD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
