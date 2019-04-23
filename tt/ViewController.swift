@@ -60,7 +60,7 @@ class ViewController: UIViewController, NSURLConnectionDelegate, NSURLConnection
         mutableData.append(data)
     }
     
-    func parser(_ parser: XMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String]) {
+    func parser(_ parser: XMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String]) {	
         currentElementName = elementName
     }
     func parser(_ parser: XMLParser, foundCharacters string: String) {
