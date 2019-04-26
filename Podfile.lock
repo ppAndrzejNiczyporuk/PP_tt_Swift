@@ -1,0 +1,20 @@
+PODS:
+  - CheatyXML (2.2.0)
+  - SWXMLHash (4.9.0)
+
+DEPENDENCIES:
+  - CheatyXML
+  - SWXMLHash (~> 4.9.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - CheatyXML
+    - SWXMLHash
+
+SPEC CHECKSUMS:
+  CheatyXML: f4a83530e8fb916e792d4153c91a62fc29a75a64
+  SWXMLHash: 87b0006848a548b7f9485b40bc71721b3ae39add
+
+PODFILE CHECKSUM: 04d47bf56e9efe0304552867b2b1243c3a2d9bb2
+
+COCOAPODS: 1.6.1

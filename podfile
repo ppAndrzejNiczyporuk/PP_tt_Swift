@@ -1,0 +1,7 @@
+platform :ios, '12.2’
+use_frameworks!
+
+target 'tt' do
+pod 'CheatyXML'
+pod 'SWXMLHash', '~> 4.9.0'
+end
