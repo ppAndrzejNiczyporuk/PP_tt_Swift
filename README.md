@@ -1,7 +1,8 @@
 # PP_tt_Swift
 Poczta Polska śledzenie w Swift 
+Na podstawie dokumentacji http://www.poczta-polska.pl/pliki/webservices/Metody%20i%20struktury%20uslugi%20sieciowej%20Poczty%20Polskiej%20SA.pdf?84cd58
 
-Opis poprawnego Envelop wpisanego w kodzie 
+Opis poprawnego Envelop wykorzystany w  kodzie. 
 
 <soapenv:Header>
  <wsse:Security
