@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3411733022882D59005A599B /* ParcelsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3411732F22882D59005A599B /* ParcelsTableViewController.swift */; };
+		341173322288604B005A599B /* PPParcel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341173312288604B005A599B /* PPParcel.swift */; };
 		34CAC45222673222009E8095 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CAC45122673222009E8095 /* AppDelegate.swift */; };
-		34CAC45422673222009E8095 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CAC45322673222009E8095 /* ViewController.swift */; };
+		34CAC45422673222009E8095 /* ParcelDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CAC45322673222009E8095 /* ParcelDetailViewController.swift */; };
 		34CAC45722673222009E8095 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34CAC45522673222009E8095 /* Main.storyboard */; };
 		34CAC45922673224009E8095 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34CAC45822673224009E8095 /* Assets.xcassets */; };
 		34CAC45C22673224009E8095 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34CAC45A22673224009E8095 /* LaunchScreen.storyboard */; };
@@ -36,9 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3411732F22882D59005A599B /* ParcelsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParcelsTableViewController.swift; sourceTree = "<group>"; };
+		341173312288604B005A599B /* PPParcel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPParcel.swift; sourceTree = "<group>"; };
 		34CAC44E22673222009E8095 /* tt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34CAC45122673222009E8095 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		34CAC45322673222009E8095 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		34CAC45322673222009E8095 /* ParcelDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParcelDetailViewController.swift; sourceTree = "<group>"; };
 		34CAC45622673222009E8095 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		34CAC45822673224009E8095 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		34CAC45B22673224009E8095 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -115,8 +119,10 @@
 			isa = PBXGroup;
 			children = (
 				34CAC45122673222009E8095 /* AppDelegate.swift */,
-				34CAC45322673222009E8095 /* ViewController.swift */,
+				34CAC45322673222009E8095 /* ParcelDetailViewController.swift */,
 				34CAC45522673222009E8095 /* Main.storyboard */,
+				341173312288604B005A599B /* PPParcel.swift */,
+				3411732F22882D59005A599B /* ParcelsTableViewController.swift */,
 				34CAC45822673224009E8095 /* Assets.xcassets */,
 				34CAC45A22673224009E8095 /* LaunchScreen.storyboard */,
 				34CAC45D22673224009E8095 /* Info.plist */,
@@ -149,7 +155,6 @@
 				D572F3F16B3E3530001DE435 /* Pods-tt.debug.xcconfig */,
 				C6B0169343551D8E0D9F11DB /* Pods-tt.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -336,8 +341,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				34CAC48022674278009E8095 /* CodeList.swift in Sources */,
-				34CAC45422673222009E8095 /* ViewController.swift in Sources */,
+				34CAC45422673222009E8095 /* ParcelDetailViewController.swift in Sources */,
 				34CAC45222673222009E8095 /* AppDelegate.swift in Sources */,
+				341173322288604B005A599B /* PPParcel.swift in Sources */,
+				3411733022882D59005A599B /* ParcelsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

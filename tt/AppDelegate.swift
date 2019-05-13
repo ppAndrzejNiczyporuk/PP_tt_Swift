@@ -12,10 +12,14 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    
+    
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        if let splitController = window?.rootViewController as? UISplitViewController {
+            splitController.delegate = self
+        }
         return true
     }
 
@@ -42,5 +46,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 
+}
+
+extension AppDelegate: UISplitViewControllerDelegate {
+    
+    func splitViewController(_ splitViewController: UISplitViewController, collapseSecondary secondaryViewController: UIViewController, onto primaryViewController: UIViewController) -> Bool {
+        guard let secondaryAsParcelDetail = secondaryViewController as? ParcelDetailViewController else {
+            return false
+        }
+        
+        // Return true to indicate that we have handled the collapse by doing nothing; the secondary controller will be discarded.
+        return secondaryAsParcelDetail.parcel == nil
+}
 }
 
