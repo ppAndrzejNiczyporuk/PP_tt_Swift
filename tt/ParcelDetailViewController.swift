@@ -80,6 +80,9 @@ class ParcelDetailViewController: UIViewController, ParcelDisplayable {
         let intStatus = Int(self.status)
         if intStatus == 0
         {
+         //   NSDictionary xmlDictionary = xml["soapenv:Envelope"]["soapenv:Body"]["ns:sprawdzPrzesylkeResponse"]["ns:return"]["ax21:danePrzesylki"]["ax21:kodRodzPrzes"].element!.text
+          
+            
             txtRodzajPrzes.text = kRP[xml["soapenv:Envelope"]["soapenv:Body"]["ns:sprawdzPrzesylkeResponse"]["ns:return"]["ax21:danePrzesylki"]["ax21:kodRodzPrzes"].element!.text]
             self.zdarzenia = try! xml["soapenv:Envelope"]["soapenv:Body"]["ns:sprawdzPrzesylkeResponse"]["ns:return"]["ax21:danePrzesylki"]["ax21:zdarzenia"]["ax21:zdarzenie"].value()
             //odwrocenie zdarzeń żeby najnowsze było na górze
@@ -182,5 +185,7 @@ extension ParcelDetailViewController {
         txtParcel.text = parcel.number
         actionCheck()
     }
+    
+
 }
 

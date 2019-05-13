@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3411733022882D59005A599B /* ParcelsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3411732F22882D59005A599B /* ParcelsTableViewController.swift */; };
 		341173322288604B005A599B /* PPParcel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341173312288604B005A599B /* PPParcel.swift */; };
+		3499E7BF2289D01200AE6192 /* parcels.json in Resources */ = {isa = PBXBuildFile; fileRef = 3499E7BE2289D01200AE6192 /* parcels.json */; };
 		34CAC45222673222009E8095 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CAC45122673222009E8095 /* AppDelegate.swift */; };
 		34CAC45422673222009E8095 /* ParcelDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CAC45322673222009E8095 /* ParcelDetailViewController.swift */; };
 		34CAC45722673222009E8095 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34CAC45522673222009E8095 /* Main.storyboard */; };
@@ -40,6 +41,7 @@
 /* Begin PBXFileReference section */
 		3411732F22882D59005A599B /* ParcelsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParcelsTableViewController.swift; sourceTree = "<group>"; };
 		341173312288604B005A599B /* PPParcel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPParcel.swift; sourceTree = "<group>"; };
+		3499E7BE2289D01200AE6192 /* parcels.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = parcels.json; sourceTree = "<group>"; };
 		34CAC44E22673222009E8095 /* tt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34CAC45122673222009E8095 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		34CAC45322673222009E8095 /* ParcelDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParcelDetailViewController.swift; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				34CAC45122673222009E8095 /* AppDelegate.swift */,
+				3499E7BE2289D01200AE6192 /* parcels.json */,
 				34CAC45322673222009E8095 /* ParcelDetailViewController.swift */,
 				34CAC45522673222009E8095 /* Main.storyboard */,
 				341173312288604B005A599B /* PPParcel.swift */,
@@ -266,6 +269,7 @@
 			files = (
 				34CAC45C22673224009E8095 /* LaunchScreen.storyboard in Resources */,
 				34CAC45922673224009E8095 /* Assets.xcassets in Resources */,
+				3499E7BF2289D01200AE6192 /* parcels.json in Resources */,
 				34CAC45722673222009E8095 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

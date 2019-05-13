@@ -9,7 +9,7 @@
 import UIKit
 
 class ParcelsTableViewController: UITableViewController {
-   var parcels: [PPParcel] = [PPParcel(n: "testp0")]
+    var parcels: [PPParcel] = [] //= [PPParcel(n: "testp0")]
     @IBAction func addName(_ sender: UIBarButtonItem) {
         let alert = UIAlertController(title: "New Parcel",
                                       message: "Add a number of  parcel",
@@ -40,6 +40,7 @@ class ParcelsTableViewController: UITableViewController {
         
         title = "Parcels"
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+        importJSONParcelData()  //import test data
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -51,9 +52,29 @@ class ParcelsTableViewController: UITableViewController {
 //        }
         if let detailView = segue.destination as? ParcelDisplayable,
             let indexPath = tableView.indexPathForSelectedRow {
-            detailView.parcel = parcels[indexPath.row] 
+            detailView.parcel = parcels[indexPath.row]
         }
         
+    }
+    func importJSONParcelData() {
+        
+        let jsonURL = Bundle.main.url(forResource: "parcels", withExtension: "json")!
+        let jsonData = NSData(contentsOf: jsonURL)! as Data
+        
+        do {
+            let jsonArray = try JSONSerialization.jsonObject(with: jsonData, options: [.allowFragments]) as! [AnyObject]
+            
+            for jsonDictionary in jsonArray {
+                let number  = jsonDictionary["number"] as! String
+                
+                parcels.append(PPParcel(n: number))
+            }
+            
+            print("Imported \(jsonArray.count) parcel")
+            
+        } catch let error as NSError {
+            print("Error importing parcel: \(error)")
+        }
     }
 }
 extension ParcelsTableViewController {
