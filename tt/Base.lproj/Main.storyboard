@@ -124,14 +124,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ParcelCell" id="dwr-tx-ykl">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ParcelCell" id="dwr-tx-ykl" customClass="ParcelTableViewCell" customModule="tt">
                                 <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dwr-tx-ykl" id="xus-On-7u8">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Parcel Numer" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2lH-N0-vEs">
+                                            <rect key="frame" x="20" y="11.5" width="280" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="2lH-N0-vEs" firstAttribute="centerY" secondItem="xus-On-7u8" secondAttribute="centerY" id="3DM-82-fjx"/>
+                                        <constraint firstAttribute="trailing" secondItem="2lH-N0-vEs" secondAttribute="trailing" constant="20" symbolic="YES" id="75A-SM-9df"/>
+                                        <constraint firstItem="2lH-N0-vEs" firstAttribute="leading" secondItem="xus-On-7u8" secondAttribute="leading" constant="20" symbolic="YES" id="rdH-Xw-aiv"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="parcelNumer" destination="2lH-N0-vEs" id="Cl6-Cj-IEH"/>
                                     <segue destination="ayy-xU-AB8" kind="showDetail" identifier="showParcelDetail" id="NLG-gf-Uqa"/>
                                 </connections>
                             </tableViewCell>
@@ -184,6 +198,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="db2-8G-oYr"/>
+        <segue reference="NLG-gf-Uqa"/>
     </inferredMetricsTieBreakers>
 </document>

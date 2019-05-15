@@ -8,8 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		3411733022882D59005A599B /* ParcelsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3411732F22882D59005A599B /* ParcelsTableViewController.swift */; };
-		341173322288604B005A599B /* PPParcel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341173312288604B005A599B /* PPParcel.swift */; };
 		3499E7BF2289D01200AE6192 /* parcels.json in Resources */ = {isa = PBXBuildFile; fileRef = 3499E7BE2289D01200AE6192 /* parcels.json */; };
+		3499E7C2228AB44A00AE6192 /* ParcelDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3499E7C0228AB44A00AE6192 /* ParcelDataModel.xcdatamodeld */; };
+		3499E7D2228ABDA700AE6192 /* PPParcel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3499E7D0228ABDA700AE6192 /* PPParcel.swift */; };
+		3499E7D4228AC09A00AE6192 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3499E7D3228AC09A00AE6192 /* CoreDataStack.swift */; };
+		3499E7D6228AC7BE00AE6192 /* ParcelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3499E7D5228AC7BE00AE6192 /* ParcelTableViewCell.swift */; };
 		34CAC45222673222009E8095 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CAC45122673222009E8095 /* AppDelegate.swift */; };
 		34CAC45422673222009E8095 /* ParcelDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CAC45322673222009E8095 /* ParcelDetailViewController.swift */; };
 		34CAC45722673222009E8095 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34CAC45522673222009E8095 /* Main.storyboard */; };
@@ -40,8 +43,11 @@
 
 /* Begin PBXFileReference section */
 		3411732F22882D59005A599B /* ParcelsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParcelsTableViewController.swift; sourceTree = "<group>"; };
-		341173312288604B005A599B /* PPParcel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPParcel.swift; sourceTree = "<group>"; };
 		3499E7BE2289D01200AE6192 /* parcels.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = parcels.json; sourceTree = "<group>"; };
+		3499E7C1228AB44A00AE6192 /* ParcelDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ParcelDataModel.xcdatamodel; sourceTree = "<group>"; };
+		3499E7D0228ABDA700AE6192 /* PPParcel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPParcel.swift; sourceTree = "<group>"; };
+		3499E7D3228AC09A00AE6192 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		3499E7D5228AC7BE00AE6192 /* ParcelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParcelTableViewCell.swift; sourceTree = "<group>"; };
 		34CAC44E22673222009E8095 /* tt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34CAC45122673222009E8095 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		34CAC45322673222009E8095 /* ParcelDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParcelDetailViewController.swift; sourceTree = "<group>"; };
@@ -120,16 +126,19 @@
 		34CAC45022673222009E8095 /* tt */ = {
 			isa = PBXGroup;
 			children = (
+				3499E7D0228ABDA700AE6192 /* PPParcel.swift */,
 				34CAC45122673222009E8095 /* AppDelegate.swift */,
+				3499E7C0228AB44A00AE6192 /* ParcelDataModel.xcdatamodeld */,
 				3499E7BE2289D01200AE6192 /* parcels.json */,
 				34CAC45322673222009E8095 /* ParcelDetailViewController.swift */,
 				34CAC45522673222009E8095 /* Main.storyboard */,
-				341173312288604B005A599B /* PPParcel.swift */,
 				3411732F22882D59005A599B /* ParcelsTableViewController.swift */,
+				3499E7D5228AC7BE00AE6192 /* ParcelTableViewCell.swift */,
 				34CAC45822673224009E8095 /* Assets.xcassets */,
 				34CAC45A22673224009E8095 /* LaunchScreen.storyboard */,
 				34CAC45D22673224009E8095 /* Info.plist */,
 				34CAC47F22674278009E8095 /* CodeList.swift */,
+				3499E7D3228AC09A00AE6192 /* CoreDataStack.swift */,
 			);
 			path = tt;
 			sourceTree = "<group>";
@@ -344,10 +353,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3499E7D4228AC09A00AE6192 /* CoreDataStack.swift in Sources */,
 				34CAC48022674278009E8095 /* CodeList.swift in Sources */,
+				3499E7D6228AC7BE00AE6192 /* ParcelTableViewCell.swift in Sources */,
 				34CAC45422673222009E8095 /* ParcelDetailViewController.swift in Sources */,
+				3499E7D2228ABDA700AE6192 /* PPParcel.swift in Sources */,
 				34CAC45222673222009E8095 /* AppDelegate.swift in Sources */,
-				341173322288604B005A599B /* PPParcel.swift in Sources */,
+				3499E7C2228AB44A00AE6192 /* ParcelDataModel.xcdatamodeld in Sources */,
 				3411733022882D59005A599B /* ParcelsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -679,6 +691,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3499E7C0228AB44A00AE6192 /* ParcelDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3499E7C1228AB44A00AE6192 /* ParcelDataModel.xcdatamodel */,
+			);
+			currentVersion = 3499E7C1228AB44A00AE6192 /* ParcelDataModel.xcdatamodel */;
+			path = ParcelDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 34CAC44622673222009E8095 /* Project object */;
 }

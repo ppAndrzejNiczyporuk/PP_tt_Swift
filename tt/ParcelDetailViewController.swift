@@ -16,7 +16,7 @@ protocol ParcelDisplayable: class {
 class ParcelDetailViewController: UIViewController, ParcelDisplayable {
     var parcel: PPParcel?{
         didSet {
-            updateNoteInfo()
+            updateParcelInfo()
         }
     }
 
@@ -36,7 +36,7 @@ class ParcelDetailViewController: UIViewController, ParcelDisplayable {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        updateNoteInfo()
+        updateParcelInfo()
     }
     
     override func viewDidLoad() {
@@ -177,12 +177,12 @@ extension ParcelDetailViewController: NSURLConnectionDelegate, NSURLConnectionDa
 
 extension ParcelDetailViewController {
     
-    func updateNoteInfo() {
+    func updateParcelInfo() {
         guard isViewLoaded,
             let parcel = parcel else {
                 return
         }
-        txtParcel.text = parcel.number
+        txtParcel.text = parcel.numer
         actionCheck()
     }
     

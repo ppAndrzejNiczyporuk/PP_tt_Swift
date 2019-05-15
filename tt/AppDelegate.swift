@@ -12,6 +12,7 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+//    lazy var  coreDataStack = CoreDataStack(modelName: "ParcelDataModel")
     
     
 
@@ -21,6 +22,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             splitController.delegate = self
         }
         return true
+    
+//        guard let splitViewController = window?.rootViewController as? UISplitViewController,
+//            let leftNavController = splitViewController.viewControllers.first as? UINavigationController,
+//            let tableViewController = leftNavController.topViewController as? ParcelsTableViewController,
+//            let detailViewController = splitViewController.viewControllers.last as? ParcelDetailViewController
+//            else { fatalError() }
+//        splitViewController.delegate = self
+//        tableViewController.coreDataStack = coreDataStack
+//        return true
+    
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
@@ -42,7 +53,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationWillTerminate(_ application: UIApplication) {
-        // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+      // coreDataStack.saveContext()
     }
 
 

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14490.99" systemVersion="18E226" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="PPParcel" representedClassName="tt.PPParcel" syncable="YES">
+        <attribute name="dataNadania" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="krajNadania" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="krajPrzezn" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="numer" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rodzPrzes" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="zakonczonoObsluge" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="zdarzenia" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Zdarzenie" inverseName="parcel" inverseEntity="Zdarzenie" syncable="YES"/>
+    </entity>
+    <entity name="Zdarzenie" representedClassName="Zdarzenie" syncable="YES">
+        <attribute name="czas" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="jNazwa" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="kod" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="konczace" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="nazwa" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="parcel" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PPParcel" inverseName="zdarzenia" inverseEntity="PPParcel" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="PPParcel" positionX="-63" positionY="-18" width="128" height="150"/>
+        <element name="Zdarzenie" positionX="-54" positionY="36" width="128" height="135"/>
+    </elements>
+</model>
