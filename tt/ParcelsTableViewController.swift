@@ -41,8 +41,7 @@ class ParcelsTableViewController: UITableViewController  {
         
         title = "Parcels"
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "ParcelCell")
-        
-        //  importJSONParcelData()  //import test data
+
     }
     
     @IBAction func addName(_ sender: UIBarButtonItem) {
@@ -96,30 +95,7 @@ class ParcelsTableViewController: UITableViewController  {
         }
         
     }
-    func importJSONParcelData() {
-        
-        let jsonURL = Bundle.main.url(forResource: "parcels", withExtension: "json")!
-        let jsonData = NSData(contentsOf: jsonURL)! as Data
-        
-        do {
-            let jsonArray = try JSONSerialization.jsonObject(with: jsonData, options: [.allowFragments]) as! [AnyObject]
-            
-            for jsonDictionary in jsonArray {
-                let number  = jsonDictionary["number"] as! String
-                let parcelEntity = NSEntityDescription.entity(forEntityName: "PPParcel", in: self.stack.managedContext)!
-                let parcel = NSManagedObject(entity: parcelEntity, insertInto: self.stack.managedContext)
-                parcel.setValue(number, forKey: "numer")
-               // parcels.append(PPParcel(n: number))
-            }
-            
-            try self.stack.managedContext.save()
-    
-           print("Imported \(jsonArray.count) parcel")
-            
-        } catch let error as NSError {
-            print("Error importing parcel: \(error)")
-        }
-    }
+
 }
 extension ParcelsTableViewController {
     

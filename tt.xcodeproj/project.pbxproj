@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3411733022882D59005A599B /* ParcelsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3411732F22882D59005A599B /* ParcelsTableViewController.swift */; };
+		344B64C5228DE9F900889AB9 /* testRecorded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344B64C4228DE9F900889AB9 /* testRecorded.swift */; };
 		3499E7BF2289D01200AE6192 /* parcels.json in Resources */ = {isa = PBXBuildFile; fileRef = 3499E7BE2289D01200AE6192 /* parcels.json */; };
 		3499E7C2228AB44A00AE6192 /* ParcelDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3499E7C0228AB44A00AE6192 /* ParcelDataModel.xcdatamodeld */; };
 		3499E7D2228ABDA700AE6192 /* PPParcel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3499E7D0228ABDA700AE6192 /* PPParcel.swift */; };
@@ -43,6 +44,7 @@
 
 /* Begin PBXFileReference section */
 		3411732F22882D59005A599B /* ParcelsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParcelsTableViewController.swift; sourceTree = "<group>"; };
+		344B64C4228DE9F900889AB9 /* testRecorded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testRecorded.swift; sourceTree = "<group>"; };
 		3499E7BE2289D01200AE6192 /* parcels.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = parcels.json; sourceTree = "<group>"; };
 		3499E7C1228AB44A00AE6192 /* ParcelDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ParcelDataModel.xcdatamodel; sourceTree = "<group>"; };
 		3499E7D0228ABDA700AE6192 /* PPParcel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPParcel.swift; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				34CAC47122673224009E8095 /* ttUITests.swift */,
+				344B64C4228DE9F900889AB9 /* testRecorded.swift */,
 				34CAC47322673224009E8095 /* Info.plist */,
 			);
 			path = ttUITests;
@@ -377,6 +380,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				34CAC47222673224009E8095 /* ttUITests.swift in Sources */,
+				344B64C5228DE9F900889AB9 /* testRecorded.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
